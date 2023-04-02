@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+
+		h1 {
+			color: #333333;
+			font-size: 36px;
+			margin-top: 40px;
+		}
+
+		form {
+			display: inline-block;
+			text-align: left;
+			margin-top: 40px;
+			background-color: #ffffff;
+			border-radius: 10px;
+			padding: 20px;
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+		}
+
+		input[type="text"], input[type="email"], input[type="password"] {
+			display: block;
+			margin: 20px auto;
+			padding: 10px;
+			width: 300px;
+			border: 3px solid #ccc;
+			border-radius: 4px;
+			font-size: 16px;
+			text-align: center;
+		}
+
+		button[type="submit"] {
+			background-color: #008CBA;
+			border: none;
+			color: white;
+			padding: 20px 40px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 24px;
+			margin: 20px;
+			cursor: pointer;
+			border-radius: 10px;
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+			transition: background-color 0.3s ease;
+		}
+
+		button[type="submit"]:hover {
+			background-color: #005f6b;
+		}
+
+		.register-btn {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 10px 20px 10px;
+			text-align: match-parent;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+	</style>	
+</head>
+<body>
+	<h1>Register</h1>
+	<form method="post" action="register.php">
+		<label for="fname">First Name:</label>
+		<input type="text" id="fname" name="fname" placeholder="Atharva" required>
+
+		<label for="lname">Last Name:</label>
+		<input type="text" id="lname" name="lname" placeholder="Deshmukh" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" placeholder="atharva@example.com" required>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" placeholder="********" required>
+
+		<label for="confirm_password">Confirm Password:</label>
+		<input type="password" id="confirm_password" name="confirm_password" placeholder="********" required>
+
+		<button type="submit" class="register-btn">Register</button>
+	</form>
+	<p>Already registered? <a href="login.html">Login here</a></p>
+</body>
+</html>
